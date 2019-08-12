@@ -8,6 +8,7 @@ public class Config {
     public Config(PluginConfig config) {
         this.config = config;
         config.setDefault("messageWelcome", "Welcome to this Teamspeak server! There are currently %onlineUsers% users online.");
+        config.saveAll();
     }
 
     public void load() {
