@@ -4,8 +4,8 @@ import sun.plugin2.message.*;
 
 public class PluginMain extends PluginInterface {
 
-    Config config = new Config(getConfig());
-    MessageProcessor messageProcessor = new MessageProcessor(getAPI());
+    Config config;
+    MessageProcessor messageProcessor;
 
     @Override
     public String getName() {
@@ -14,6 +14,8 @@ public class PluginMain extends PluginInterface {
 
     @Override
     public void onEnable() {
+        messageProcessor = new MessageProcessor(getAPI());
+        config = new Config(getConfig());
         getLogger().printInfo("WelcomeMessage loaded.");
     }
 
