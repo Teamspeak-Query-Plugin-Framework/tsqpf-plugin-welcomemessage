@@ -1,7 +1,11 @@
 import com.github.theholywaffle.teamspeak3.api.event.*;
 import net.vortexdata.tsqpf.modules.*;
+import sun.plugin2.message.*;
 
 public class PluginMain extends PluginInterface {
+
+    Config config = new Config(getConfig());
+    MessageProcessor messageProcessor = new MessageProcessor(getAPI());
 
     @Override
     public String getName() {
@@ -10,12 +14,7 @@ public class PluginMain extends PluginInterface {
 
     @Override
     public void onEnable() {
-
-        getConfig().setDefault("messageWelcome", "Welcome to TS3!");
-        getConfig().saveAll();
-
         getLogger().printInfo("WelcomeMessage loaded.");
-        getLogger().printDebug("Welcome message: " + getConfig().readValue("messageWelcome"));
     }
 
     @Override
@@ -25,6 +24,6 @@ public class PluginMain extends PluginInterface {
 
     @Override
     public void onClientJoin(ClientJoinEvent clientJoinEvent) {
-        getAPI().sendPrivateMessage(clientJoinEvent.getClientId(), getConfig().readValue("messageWelcome"));
+        getAPI().sendPrivateMessage(clientJoinEvent.getClientId(), messageProcessor.process(getConfig().readValue("messageWelcome")));
     }
 }
