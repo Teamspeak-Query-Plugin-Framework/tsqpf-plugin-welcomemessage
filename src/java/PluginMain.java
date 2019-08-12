@@ -3,9 +3,6 @@ import net.vortexdata.tsqpf.modules.*;
 
 public class PluginMain extends PluginInterface {
 
-    private ConfigManager configManager;
-    private PlaceholderEvaluator placeholderEvaluator;
-
     @Override
     public String getName() {
         return "WelcomeMessage";
@@ -13,10 +10,12 @@ public class PluginMain extends PluginInterface {
 
     @Override
     public void onEnable() {
-        configManager = new ConfigManager(getConfig());
-        placeholderEvaluator = new PlaceholderEvaluator(getAPI());
-        configManager.load();
+
+        getConfig().setDefault("messageWelcome", "Welcome to TS3!");
+        getConfig().saveAll();
+
         getLogger().printInfo("WelcomeMessage loaded.");
+        getLogger().printDebug("Welcome message: " + getConfig().readValue("messageWelcome"));
     }
 
     @Override
@@ -26,6 +25,6 @@ public class PluginMain extends PluginInterface {
 
     @Override
     public void onClientJoin(ClientJoinEvent clientJoinEvent) {
-        getAPI().sendPrivateMessage(clientJoinEvent.getClientId(), placeholderEvaluator.process(configManager.getValue("messageWelcome")));
+        getAPI().sendPrivateMessage(clientJoinEvent.getClientId(), getConfig().readValue("messageWelcome"));
     }
 }
