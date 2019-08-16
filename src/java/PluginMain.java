@@ -26,6 +26,13 @@ public class PluginMain extends PluginInterface {
 
     @Override
     public void onClientJoin(ClientJoinEvent clientJoinEvent) {
-        getAPI().sendPrivateMessage(clientJoinEvent.getClientId(), messageProcessor.process(getConfig().readValue("messageWelcome")));
+        String clientNickname = clientJoinEvent.getClientNickname();
+
+        try {
+            getAPI().sendPrivateMessage(clientJoinEvent.getClientId(), messageProcessor.process(getConfig().readValue("messageWelcome")));
+        } catch (Exception e) {
+            getLogger().printDebug("Failed to send private message to " + clientNickname + ". This user probably disconnected before the private message could be sent.");
+        }
+
     }
 }
