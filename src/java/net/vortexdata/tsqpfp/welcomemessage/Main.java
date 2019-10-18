@@ -1,16 +1,13 @@
-import com.github.theholywaffle.teamspeak3.api.event.*;
-import net.vortexdata.tsqpf.modules.*;
-import sun.plugin2.message.*;
+package net.vortexdata.tsqpfp.welcomemessage;
 
-public class PluginMain extends PluginInterface {
+import com.github.theholywaffle.teamspeak3.api.event.*;
+import net.vortexdata.tsqpf.plugins.*;
+import net.vortexdata.tsqpfp.welcomemessage.*;
+
+public class Main extends TeamspeakPlugin {
 
     Config config;
     MessageProcessor messageProcessor;
-
-    @Override
-    public String getName() {
-        return "WelcomeMessage";
-    }
 
     @Override
     public void onEnable() {

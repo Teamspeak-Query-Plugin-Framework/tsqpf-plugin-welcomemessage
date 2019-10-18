@@ -1,3 +1,5 @@
+package net.vortexdata.tsqpfp.welcomemessage;
+
 import com.github.theholywaffle.teamspeak3.*;
 
 public class MessageProcessor {

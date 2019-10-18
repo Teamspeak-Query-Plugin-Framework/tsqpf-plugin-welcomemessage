@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="net.vortexdata.tsqpf-api-2.0.0-preview">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/net.vortexdata.tsqpf-api-2.0.0-preview.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
