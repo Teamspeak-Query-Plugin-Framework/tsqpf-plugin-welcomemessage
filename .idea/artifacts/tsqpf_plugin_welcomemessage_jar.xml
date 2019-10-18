@@ -3,7 +3,6 @@
     <output-path>$PROJECT_DIR$/out/artifacts/tsqpf_plugin_welcomemessage_jar</output-path>
     <root id="archive" name="tsqpf-plugin-welcomemessage.jar">
       <element id="module-output" name="tsqpf-plugin-welcomemessage" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/prerequisites/TSQPF_Api.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
