@@ -25,7 +25,7 @@ public class WelcomeMessage extends TeamspeakPlugin {
     @Override
     public void onClientJoin(ClientJoinEvent clientJoinEvent) {
         try {
-            getAPI().sendPrivateMessage(clientJoinEvent.getClientId(), messageProcessor.process(getConfig().readValue("messageWelcome")));
+            getAPI().sendPrivateMessage(clientJoinEvent.getClientId(), messageProcessor.process(getConfig().readValue("messageWelcome"), clientJoinEvent));
         } catch (Exception e) {
             getLogger().printDebug("Failed to send private message to " + clientJoinEvent.getInvokerName() + ". This user probably disconnected before the private message could be sent.");
         }
