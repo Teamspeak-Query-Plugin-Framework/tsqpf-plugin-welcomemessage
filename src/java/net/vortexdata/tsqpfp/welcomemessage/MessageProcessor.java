@@ -89,7 +89,7 @@ public class MessageProcessor {
 
 
             } else if (part.equals("clientNickname")) {
-                exportValue += cje.getInvokerName();
+                exportValue += cje.getClientNickname();
             }
 
             else {
