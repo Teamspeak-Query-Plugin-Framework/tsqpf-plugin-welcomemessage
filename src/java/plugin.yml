@@ -1,3 +1,3 @@
-main: net.vortexdata.tsqpfp.welcomemessage.Main
+main: net.vortexdata.tsqpfp.welcomemessage.WelcomeMessage
 name: WelcomeMessage
-version: 2.0.0-preview
+version: 2.0.0
