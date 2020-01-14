@@ -1,28 +1,28 @@
-# Welcome Message Plugin for TSQPF
+# WelcomeMessage
+Customize your servers welcome message with this simple plugin. It also allows you to add server variables to your welcome message, such as online users, online administrators, etc.
 
-A plugin for the Teamspeak Query Plugin Framework which allows server admins to send a customized welcome message to everyone connecting to the server.
+## 💡 How does it work?
 
-## Features
-- Dynamic placeholders
+If a client joins your server, this plugin sends him a custom welcome message, which can be configured in the plugins config.
 
-## Getting Started
+## 🚀 Gettings started
 
-### Prerequisites
+Just download the latest release that's compatible with your TSQPF version and copy it into its plugin directory. After you've done that, either reload or restart your framework instance in order to get it loaded and initiated.
 
-#### Cross-Platform
-- Teamspeak Query Plugin Framework
-- Java 8
+## ⚙️ Configuration
 
-### Download
+Here's a list of all config keys, value datatypes and a description:
 
-   Download the latest release from this repository.
-   
-### Installation
+KEY | DATATYPE | DESCRIPTION
 
-   Copy "tsqpf-plugin-welcomemessage-X.X.X.jar" to the plugin folder and reload / restart the framework.
-   
-   The framework will generate the plugin directory with a plugin.conf file. Before using it, please check this file and adjust the values to fit your server.
+- **messageWelcome** : [String] Defines the welcome message.
 
-### Usage
 
-   Connect to your Teamspeak server and open the chat window with the frameworks client name. 
+## 📁 Directory Tree
+
+AntiAFK/<br>
+└── plugin.conf<br>
+
+## 📜 Vortexdata Certification
+
+This plugin is developed by VortexdataNET for the Teamspeak Query Plugin Framework. Every release is being tested for any bugs, its performance or security issues. You are free to use, modify or redistribute the plugin.
