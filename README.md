@@ -16,6 +16,7 @@ Here's a list of all config keys, value datatypes and a description:
 KEY | DATATYPE | DESCRIPTION
 
 - **messageWelcome** : [String] Defines the welcome message.
+- **staffGroups** : [Integer] Staff groups of your server (separated by comma with no whitespaces).
 
 
 ## 📁 Directory Tree
