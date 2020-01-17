@@ -18,6 +18,23 @@ KEY | DATATYPE | DESCRIPTION
 - **messageWelcome** : [String] Defines the welcome message.
 - **staffGroups** : [Integer] Staff groups of your server (separated by comma with no whitespaces).
 
+## ⚙️ Message Placeholder
+
+Here's a list of all placeholders that can be used in the welcome message:
+
+KEY | DESCRIPTION
+
+- **onlineUsers** : Total count of online users, minus the framework.
+- **onlineOtherUsers** : Count of other online users, minus own client and framework.
+- **totalUniqueUsers** : Count of unique users in the database.
+- **servergroupCount** : Count of server groups.
+- **channelCount** : Count of channels.
+- **channelgroupCount** : Count of channel groups.
+- **onlineStaffCount** : Count of online staff members.
+- **bannedPlayersCount** : Count of banned clients.
+- **lastIssuedBanDate** : Date of last issues ban.
+- **clientNickname** : The clients nickname.
+
 
 ## 📁 Directory Tree
 
