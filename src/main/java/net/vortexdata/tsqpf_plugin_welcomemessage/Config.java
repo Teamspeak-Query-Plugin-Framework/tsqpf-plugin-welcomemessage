@@ -1,7 +1,5 @@
-package net.vortexdata.tsqpfp.welcomemessage;
+package net.vortexdata.tsqpf_plugin_welcomemessage;
 
-import com.github.theholywaffle.teamspeak3.*;
-import net.vortexdata.tsqpf.modules.*;
 import net.vortexdata.tsqpf.plugins.*;
 
 public class Config {

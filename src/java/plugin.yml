@@ -1,4 +1,0 @@
-main: net.vortexdata.tsqpfp.welcomemessage.WelcomeMessage
-name: WelcomeMessage
-version: ${project.version}
-api-version: 2.0.0

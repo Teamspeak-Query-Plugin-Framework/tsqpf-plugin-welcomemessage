@@ -1,4 +1,4 @@
-package net.vortexdata.tsqpfp.welcomemessage;
+package net.vortexdata.tsqpf_plugin_welcomemessage;
 
 import com.github.theholywaffle.teamspeak3.*;
 import com.github.theholywaffle.teamspeak3.api.event.*;
