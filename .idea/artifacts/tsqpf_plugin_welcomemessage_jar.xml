@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="tsqpf-plugin-welcomemessage:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/tsqpf_plugin_welcomemessage_jar</output-path>
-    <root id="archive" name="tsqpf-plugin-welcomemessage.jar">
-      <element id="module-output" name="tsqpf-plugin-welcomemessage" />
-    </root>
-  </artifact>
-</component>
