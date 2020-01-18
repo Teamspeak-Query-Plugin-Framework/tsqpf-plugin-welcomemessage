@@ -1,4 +1,4 @@
-# net.vortexdata.tsqpf_plugin_welcomemessage.WelcomeMessage
+# WelcomeMessage
 Customize your servers welcome message with this simple plugin. It also allows you to add server variables to your welcome message, such as online users, online administrators, etc.
 
 ## 💡 How does it work?
