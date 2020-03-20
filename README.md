@@ -31,7 +31,7 @@ KEY | DESCRIPTION
 - **channelCount** : Count of channels.
 - **channelgroupCount** : Count of channel groups.
 - **onlineStaffCount** : Count of online staff members.
-- **bannedPlayersCount** : Count of banned clients.
+- **bannedClientCount** : Count of banned clients.
 - **lastIssuedBanDate** : Date of last issues ban.
 - **clientNickname** : The clients nickname.
 
