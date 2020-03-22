@@ -21,10 +21,11 @@ public class WelcomeMessage extends TeamspeakPlugin {
         getConfig().setDefault("staffGroups", "1");
         getConfig().saveAll();
 
-        cache = new Cache(getAPI(), getConfig(), getLogger());
 
-        messageProcessor = new MessageProcessor(getAPI(), getConfig(), cache);
-    }
+    cache = new Cache(getAPI(), getConfig(), getLogger());
+
+    messageProcessor = new MessageProcessor(getAPI(), getConfig(), cache);
+}
 
     @Override
     public void onDisable() {
@@ -44,7 +45,6 @@ public class WelcomeMessage extends TeamspeakPlugin {
         }
         tpe.submit(new UpdateTask(cache));
     }
-
     @Override
     public void onClientLeave(ClientLeaveEvent clientLeaveEvent) {
         tpe.submit(new UpdateTask(cache));
