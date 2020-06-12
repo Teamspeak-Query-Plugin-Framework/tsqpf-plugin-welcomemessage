@@ -16,6 +16,9 @@ Here's a list of all config keys, value datatypes and a description:
 KEY | DATATYPE | DESCRIPTION
 
 - **messageWelcome** : [String] Defines the welcome message.
+- **messageWelcomePoke** : [String] Defines the poke message on client join (leave empty to disable feature).
+- **messageFirstJoin** : [String] Defines the message sent to client on first join (leave empty to disable feature).
+- **messageFirstJoinPoke** : [String] Defines the poke message sent to client on first join (leave empty to disable feature).
 - **staffGroups** : [Integer] Staff groups of your server (separated by comma with no whitespaces).
 
 ## ⚙️ Message Placeholder
