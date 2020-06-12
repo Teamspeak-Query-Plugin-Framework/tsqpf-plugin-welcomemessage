@@ -4,6 +4,7 @@ import com.github.theholywaffle.teamspeak3.*;
 import com.github.theholywaffle.teamspeak3.api.wrapper.*;
 import net.vortexdata.tsqpf.plugins.*;
 import net.vortexdata.tsqpf_plugin_welcomemessage.cache.*;
+import org.junit.platform.commons.util.ExceptionUtils;
 
 import java.util.*;
 
@@ -13,6 +14,7 @@ public class CVOnlineStaffCount extends CachedValue {
 
     public CVOnlineStaffCount(TS3Api api, PluginConfig config) {
         super("onlineStaffCount", "0", api);
+        this.config = config;
     }
 
     @Override
@@ -26,7 +28,6 @@ public class CVOnlineStaffCount extends CachedValue {
             });
 
             ArrayList<ServerGroupClient> staffMembers = new ArrayList<>();
-
             for (int c : staffGroups) {
                 staffMembers.addAll(api.getServerGroupClients(c));
             }
